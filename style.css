@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -66,14 +66,15 @@ body {
 	padding: 0;
 }
 
-#shell {
+
+#shell, header, #popular-articles {
+	box-shadow: -1px 0 4px 0 #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
 	max-width: 1605px;
 	width: 100%;
 	position: relative;
-	box-shadow: -1px 0 4px 0 #e2e2e2;
 	margin: 0 auto;
-	border-right: 1px solid #e2e2e2;
-	border-left: 1px solid #e2e2e2;
 }
 
 a {
@@ -93,7 +94,10 @@ h1 {
 	font size: 1.5rem;
 	font font-weight: 700;
 	font-style: italic;
+	border-bottom: 1px solid #c0c0c0;
+	padding-bottom: 15px;
 }
+
 
 h4 {
 	text-transform: uppercase;
@@ -103,6 +107,11 @@ h4 {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
+
+h1, h4, #byline {
+	margin: 10px;
+}
+
 
 li {
 	display: inline-block;
@@ -119,15 +128,15 @@ p {
 
 header {
 	position: fixed;
-	width: 100%;
 	height: 40px;
-	top: 0;
-	border-bottom: 1px solid #c0c0c0;
 	vertical-align: middle;
 	padding: 10px;
 	text-align: center;
+	overflow: hidden;
+	z-index: 999;
+	top: 0;
+	background-color: #fff;
 }
-
 
 button {
 	text-transform: uppercase;
@@ -189,6 +198,41 @@ section	{
 	margin-top: 60px;
 }
 
+#popular-articles {
+	padding: 5px;
+	vertical-align: middle;
+	height: 80px;
+}
+
+h3.kicker {
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 9px;
+	font-style: "nyt-franklin", Arial, helvetica, sans-serif;
+	margin-bottom: 2px;
+}
+
+h2.story-header {
+	font-weight: 200;
+	font-size: 13px;
+}
+
+.article-snip {
+	width: 240px;
+	height: 64px;
+	border-right: 1px solid #a0a0a0;
+	margin: 5px;
+}
+
+.kicker-header, .article-thumb {
+	display: inline-block;
+}
+
+.kicker-header {
+	max-width: 150px;
+	margin: 5px;
+}
+
 #kicker-label {
 	font-family: "nyt-franklin", arial, helvetica, sans-serif;
 }
@@ -200,4 +244,21 @@ section	{
 
 .pub-date, .author {
 	display: inline-block;
+}
+
+.article-section {
+	width: 50%;
+	max-width: 540px;
+	min-width: 300px;
+	margin-left: 150px;
+}
+
+#alan-guth-image, #space-ripples-image, caption {
+	margin: 10px;
+	max-width: 1065px;
+	width: 95%;
+}
+
+#antarctica-image {
+	max-width: 540px;
 }
