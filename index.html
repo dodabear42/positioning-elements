@@ -10,20 +10,26 @@
 				<div id="left-nav-group">
 					<li>
 						<button id="sections-button">
-							<img src="sections-icon.png">
-							Sections
+							<img class="button-image" src="sections-icon.png">
+							<div class="button-text">
+								Sections
+							</div>
 						</button>
 					</li>
 					<li>
 						<button id="home-button">
-							<img src="home-icon.png">
-							<span id="button-text">Home</span>
+							<img class="button-image" src="home-icon.png">
+							<div class="button-text">
+								Home
+							</div>
 						</button>
 					</li>
 					<li>
 						<button id="search-button">
-							<img src="search-icon.png">
-							<span id="button-text">Search</span>
+							<img class="button-image" src="search-icon.png">
+							<div class="button-text">
+								Search
+							</div>
 						</button>
 					</li>
 				</div>
@@ -51,8 +57,7 @@
 				</div>
 			</ul>
 		</header>
-		<section>
-			<div id="popular-articles">
+		<div id="popular-articles">
 				<ol>
 					<li>
 						<div class="article-snip">
@@ -101,6 +106,7 @@
 					</li>
 				</ol>
 			</div><br>
+		<section>
 			<h4 id="kicker-label">
 				<a href="#">Space &amp; Cosmos</a>
 			</h4>
@@ -116,7 +122,7 @@
 			<img id="alan-guth-image" src="http://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-master1050.jpg"><br>
 			<caption>
 				Alan Guth was one of the first physicists to hypothesize the existence of inflation&#44; which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.<br>
-				Credit Rick Friedman for The New York Times
+				<div class="sub-caption">Credit Rick Friedman for The New York Times</div>
 			</caption>
 			<div class="article-section">
 				<p>CAMBRIDGE&#44; Mass. &#8212; One night late in 1979, an itinerant young physicist named Alan Guth&#44; with a new son and a year&#39;s appointment at Stanford&#44; stayed up late with his notebook and equations, venturing far beyond the world of known physics.</p>
@@ -135,11 +141,20 @@
 
 				<p>If corroborated, Dr. Kovac&#39;s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.</p>
 			</div>
-			<img id="space-ripples-image" src="http://graphics8.nytimes.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png">
+			<div class="image-wrapper">
+				<div class="image-intro">
+					<h2>
+						The Theory of Inflation
+					</h2>
+					<p>Astronomers have found evidence to support the theory of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</p>
+				</div>
+				<img id="space-ripples-image" src="http://graphics8.nytimes.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png">
+				<caption>By LARRY BUCHANAN and JONATHAN CORUM</caption>
+			</div><br>
 			<div class="article-section">
 				<p>Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.</p>
 
-				<h6>&#39;As Big as It Gets&#39;</h6>
+				<h2>&#39;As Big as It Gets&#39;</h2>
 
 				<p>In our own universe, it would serve as a window into the forces operating at energies forever beyond the reach of particle accelerators on Earth and yield new insights into gravity itself. Dr. Kovac&#39;s ripples would be the first direct observation of gravitational waves, which, according to Einstein’s theory of general relativity, should ruffle space-time.</p>
 
@@ -163,11 +178,19 @@
 
 				<p>Andrei Linde of Stanford, a prolific theorist who first described the most popular variant of inflation, known as chaotic inflation, in 1983, was about to go on vacation in the Caribbean last week when Chao-Lin Kuo, a Stanford colleague and a member of Dr. Kovac&#39;s team, knocked on his door with a bottle of Champagne to tell him the news.</p>
 			</div>
-			<video controls src="https://www.youtube.com/watch?v=ZlfIVEy_YOA"></video>
-			<caption>
-				Stanford Professor Andrei Linde celebrates physics breakthrough<br>
-				Video by StanfordUniversity
-			</caption>
+			<div id="vid-content-wrapper">
+				<iframe title="YouTube video player" class="youtube-player" type="text/html"
+				width="560" height="315" src="http://www.youtube.com/embed/ZlfIVEy_YOA"
+				frameborder="0" allowfullscreen></iframe>
+				<div id="vid-caption-box">
+					<caption>
+						Stanford Professor Andrei Linde celebrates physics breakthrough
+					</caption><br>
+					<div class="sub-caption">
+						Video by StanfordUniversity
+					</div>
+				</div>
+			</div>
 			<div class="article-section">
 				<p>Confused, Dr. Linde called out to his wife, asking if she had ordered anything.</p>
 
@@ -193,7 +216,7 @@
 				</caption>
 				<p>Corroboration might not be long in coming. The Planck spacecraft will report its own findings this year. At least a dozen other teams are trying similar measurements from balloons, mountaintops and space.</p>
 
-				<h6>Spirals in the Sky</h6>
+				<h2>Spirals in the Sky</h2>
 
 				<p>Gravity waves are the latest and deepest secret yet pried out of the cosmic microwaves, which were discovered accidentally by Arno Penzias and Robert Wilson at Bell Labs 50 years ago. They won the Nobel Prize.</p>
 
@@ -211,7 +234,7 @@
 
 				<p>The strength of the signal surprised the researchers, and they spent a year burning up time on a Harvard supercomputer, making sure they had things right and worrying that competitors might beat them to the breakthrough.</p>
 
-				<h6>A Special Time</h6>
+				<h2>A Special Time</h2>
 
 				<p>The data traced the onset of inflation to a time that physicists like Dr. Guth, staying up late in his Palo Alto house 35 years ago, suspected was a special break point in the evolution of the universe.</p>
 
@@ -238,11 +261,11 @@
 				<p>We might never know what happened before inflation, at the very beginning, because inflation erases everything that came before it. All the chaos and randomness of the primordial moment are swept away, forever out of our view.</p>
 
 				<p>&quot;If you trace your cosmic roots,&quot; said Abraham Loeb, a Harvard-Smithsonian astronomer who was not part of the team, &quot;you wind up at inflation.&quot;</p>
+				<caption>
+					A version of this article appears in print on March 18, 2014, on page A1 of the New York edition with the headline: Space Ripples Reveal Big Bang&#39;s Smoking Gun.<br>
+					Order Reprints|Today&#39;s Paper|Subscribe
+				</caption>
 			</div>
-			<caption>
-				A version of this article appears in print on March 18, 2014, on page A1 of the New York edition with the headline: Space Ripples Reveal Big Bang&#39;s Smoking Gun.<br>
-				Order Reprints|Today&#39;s Paper|Subscribe
-			</caption>
 		</section>
 		<footer>
 		</footer>
